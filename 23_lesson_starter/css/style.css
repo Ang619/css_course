@@ -37,13 +37,38 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+  
 }
 
 /* || BLOCKS */
 /* aka components */
+
+.header {
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: 1rem 1rem 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
 
 .btn {
   min-width: 100px;
   min-height: 100px;
   border-radius: 15px;
 }
+
+.btn--secondary {
+  background-color: yellow;
+}
+
+/* ELEMENTS
+ No standalone meaning - semanticaclly tied to the blocks
+ does nit represent structure, not header__nav__btn */
+
+ .btn {
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 15px;
+}
+
